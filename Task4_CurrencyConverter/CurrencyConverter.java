@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class CurrencyConverter {
 
-    static final String API_KEY = "YOUR_API_KEY";
+    static final String API_KEY = System.getenv("EXCHANGE_RATE_API_KEY");
     static final String API_URL = "https://v6.exchangerate-api.com/v6/" + API_KEY + "/pair/";
 
     public static void main(String[] args) {
